@@ -16,7 +16,7 @@ mongoose.connect('mongodb+srv://admin:admin@cluster0.srnvy.mongodb.net/brilliant
  }).catch(()=>{
      console.log('DB ERoR');
  })
-app.listen(process.env.PORT|| 3000, () =>{
+app.listen(process.env.PORT||3001, () =>{
     console.log("Connected")
 })
 
