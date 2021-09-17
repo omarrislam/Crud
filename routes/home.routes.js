@@ -6,6 +6,9 @@ app.get('/home', auth, async (req, res) => {
     let posts = await postModel.find({ userID: req.userID })
     res.json({ posts })
 })
+app.get('/',(req,res)=>{
+    res.json({message:"HELLO"})
+})
 
 app.post('/addPost', auth, async (req, res) => {
     const { title, desc } = req.body
