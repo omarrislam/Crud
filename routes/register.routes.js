@@ -1,5 +1,4 @@
 const app = require('express').Router()
-const validation = require('../validation/register.validation')
 const userModel = require('../models/user.models')
 const bcrypt = require('bcrypt')
 app.post('/register', async (req, res) => {

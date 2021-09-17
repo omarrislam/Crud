@@ -1,6 +1,4 @@
 const app = require('express').Router()
-const { validationResult } = require('express-validator')
-const validation = require('../validation/login.validation')
 const userModel = require('../models/user.models')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
