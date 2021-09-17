@@ -1,6 +1,8 @@
 const app = require('express').Router()
 const userModel = require('../models/user.models')
 const bcrypt = require('bcrypt')
+
+
 app.post('/register', async (req, res) => {
     const { email, password,mobile ,address ,gender } = req.body
     try {

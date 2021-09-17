@@ -14,7 +14,6 @@ app.use(express.json())
 app.use(require('./routes/register.routes'))
 app.use(require('./routes/login.routes'))
 app.use(require('./routes/home.routes'))
-app.get('/', (req, res) => res.send('Hello World!'))
 app.listen(port, () => console.log(`Example app listening on port ! ${port}`))
 
 
